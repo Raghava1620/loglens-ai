@@ -5,7 +5,7 @@ import json
 import os
 import re
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = os.environ.get("API_KEY", "")
 
 app = Flask(__name__)
 
